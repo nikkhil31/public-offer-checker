@@ -6,13 +6,14 @@ export const Screen = styled.div`
     width: 425px;
     height: 100vh;
     background-color: #e7eaef;
+    padding-top: 1rem;
 `
 
 export const CompaniesUL = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 
     & li {
         list-style: none;
