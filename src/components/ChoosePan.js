@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import {
+    AddBtn,
     BackIcon,
     Checkbox,
     CheckCircle,
     CheckIcon,
+    Footer,
     Header,
     Panwraper,
+    SubmitBtn,
 } from './choosepan.elements'
 
 const ChoosePan = () => {
@@ -90,6 +93,10 @@ const ChoosePan = () => {
                     <h3> Nikhil Limbad</h3>
                 </Checkbox>
             </Panwraper>
+            <Footer>
+                <AddBtn />
+                <SubmitBtn />
+            </Footer>
         </>
     )
 }

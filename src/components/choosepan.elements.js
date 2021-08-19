@@ -51,18 +51,51 @@ export const Header = styled.div`
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 45px;
-    padding: 0.5rem;
+    width: inherit;
+    height: 50px;
+    padding: 0.5rem 1.5rem;
+    background-color: #9b9ca4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 `
 
 export const Panwraper = styled.div`
     margin-top: 2rem;
-    height: 100%;
+    height: calc(100% - 45px);
     overflow-y: scroll;
 `
 export const BackIcon = styled(FaLongArrowAltLeft)`
     /* display: inline-block; */
     /* padding: 1rem; */
+    /* position: relative; */
+    color: #fdfdfd;
+`
+
+export const Footer = styled.div`
+    width: inherit;
+    height: 55px;
+    position: fixed;
+    bottom: 0;
+    background-color: #9b9ca4;
+    border-radius: 10px 10px 0 0;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+`
+
+export const AddBtn = styled.div`
+    width: 22%;
+    padding: 1.2rem;
+    background-color: #fdfdfd;
+    /* margin-top: 0.5rem; */
+    border-radius: 10px;
+`
+
+export const SubmitBtn = styled.div`
+    width: 75%;
+    padding: 1.2rem;
+    background-color: #e7eaef;
+    border-radius: 10px;
+    /* margin-top: 0.5rem; */
 `
