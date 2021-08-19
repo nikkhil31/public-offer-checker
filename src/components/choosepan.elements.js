@@ -1,36 +1,68 @@
+import { FaCheck, FaLongArrowAltLeft } from 'react-icons/fa'
 import styled from 'styled-components'
 
 export const Checkbox = styled.div`
-    padding-top: 2rem;
-    width: 80%;
+    width: 90%;
+    background-color: #fdfdfd;
+    margin: 0 5%;
+    display: flex;
     padding: 1rem;
-    /* background-color: blue; */
-    margin-left: 10%;
-    border-radius: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 1rem;
 
-    & input {
-        cursor: pointer;
-        opacity: 0;
-        position: absolute;
-    }
-
-    & label {
-        width: 100%;
-        cursor: pointer;
+    /* & div {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 20px;
         display: flex;
-        justify-content: space-between;
-    }
+        justify-content: center;
+        align-items: center;
+        background-color: #7edb75;
+    } */
 
-    & label::before {
-        content: '';
-        width: 1em;
-        height: 1em;
-        border-radius: 99px;
-        /* margin-right: 1.5rem; */
-        border: 0.05em solid black;
+    & h3 {
+        padding-left: 2rem;
+        color: #4e4e59;
     }
+`
+
+export const CheckIcon = styled(FaCheck)`
+    color: ${({ checked }) => (checked ? '#fdfdfd' : '#4e4e59')};
+`
+
+export const CheckCircle = styled.div`
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid ${({ checked }) => (checked ? '#7edb75' : '#4e4e59')};
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ${({ checked }) => (checked ? '#7edb75' : '')};
 `
 
 export const MainPage = styled.div`
     width: 100%;
+`
+
+export const Header = styled.div`
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    padding: 0.5rem;
+`
+
+export const Panwraper = styled.div`
+    margin-top: 2rem;
+    height: 100%;
+    overflow-y: scroll;
+`
+export const BackIcon = styled(FaLongArrowAltLeft)`
+    /* display: inline-block; */
+    /* padding: 1rem; */
 `

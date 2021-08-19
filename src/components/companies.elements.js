@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { GrFormNextLink } from 'react-icons/gr'
-import { ArrowForward } from '@styled-icons/evaicons-solid/ArrowForward'
+import { FaLongArrowAltRight } from 'react-icons/fa'
+// import { ArrowForward } from '@styled-icons/evaicons-solid/ArrowForward'
 
 export const Screen = styled.div`
     width: 425px;
@@ -48,7 +48,7 @@ export const CompanyName = styled.h4`
     color: #4e4e59;
 `
 
-export const GoIcon = styled(ArrowForward)`
+export const GoIcon = styled(FaLongArrowAltRight)`
     width: 11%;
     height: 20px;
     display: inline-block;

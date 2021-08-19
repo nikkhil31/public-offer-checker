@@ -1,17 +1,96 @@
-import React from 'react'
-import { Checkbox, MainPage } from './choosepan.elements'
+import React, { useState } from 'react'
+import {
+    BackIcon,
+    Checkbox,
+    CheckCircle,
+    CheckIcon,
+    Header,
+    Panwraper,
+} from './choosepan.elements'
 
 const ChoosePan = () => {
+    const [isChecked, setIsChecked] = useState(false)
+
     return (
-        <Checkbox>
-            <input
-                type="checkbox"
-                id="bfspl7200m"
-                name="check1"
-                value="bfspl7200m"
-            />
-            <label for="bfspl7200m"> Nikhil Limbad</label>
-        </Checkbox>
+        <>
+            <Header>
+                <BackIcon size={30} />
+            </Header>
+            <Panwraper>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+                <Checkbox onClick={() => setIsChecked(!isChecked)}>
+                    <CheckCircle checked={isChecked}>
+                        <CheckIcon checked={isChecked} />
+                    </CheckCircle>
+                    <h3> Nikhil Limbad</h3>
+                </Checkbox>
+            </Panwraper>
+        </>
     )
 }
 
