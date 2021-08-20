@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FaLongArrowAltRight, FaPlus } from 'react-icons/fa'
 import {
     AddBtn,
     BackIcon,
@@ -94,8 +95,8 @@ const ChoosePan = () => {
                 </Checkbox>
             </Panwraper>
             <Footer>
-                <AddBtn />
-                <SubmitBtn />
+                <AddBtn><FaPlus/></AddBtn>
+                <SubmitBtn> <span>Submit</span></SubmitBtn>
             </Footer>
         </>
     )

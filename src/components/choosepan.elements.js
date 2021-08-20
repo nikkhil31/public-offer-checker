@@ -61,7 +61,7 @@ export const Header = styled.div`
 
 export const Panwraper = styled.div`
     margin-top: 2rem;
-    height: calc(100% - 45px);
+    height: calc(100% - 100px);
     overflow-y: scroll;
 `
 export const BackIcon = styled(FaLongArrowAltLeft)`
@@ -86,16 +86,30 @@ export const Footer = styled.div`
 
 export const AddBtn = styled.div`
     width: 22%;
-    padding: 1.2rem;
+    height: 40px;
+    /* padding: 0.7rem; */
     background-color: #fdfdfd;
     /* margin-top: 0.5rem; */
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const SubmitBtn = styled.div`
     width: 75%;
-    padding: 1.2rem;
+    height: 40px;
+    /* padding: 0.7rem; */
     background-color: #e7eaef;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* margin-top: 0.5rem; */
+
+    & span {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #000;
+    }
 `
